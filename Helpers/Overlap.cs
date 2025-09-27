@@ -15,9 +15,9 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Checks for overlapping colliders within a sphere area.
 		/// </summary>
-		/// <param name="point"></param>
-		/// <param name="radius"></param>
-		/// <returns></returns>
+		/// <param name="point">The center point of the sphere.</param>
+		/// <param name="radius">The radius of the sphere.</param>
+		/// <returns>An OverlapObject to configure and run the overlap check.</returns>
 		public static OverlapObject Sphere(Vector3 point, float radius)
 		{
 			return new OverlapObject(point, radius, OverlapType.Sphere);
@@ -41,8 +41,8 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Sets the layer mask for the overlap check.
 		/// </summary>
-		/// <param name="layerMask"></param>
-		/// <returns></returns>
+		/// <param name="layerMask">The layer mask to use for the overlap check.</param>
+		/// <returns>The current OverlapObject for method chaining.</returns>
 		public OverlapObject WithLayerMask(LayerMask layerMask)
 		{
 			_layerMask |= layerMask;
@@ -52,7 +52,7 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Runs the overlap check and returns the result.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>An OverlapResult containing the results of the overlap check.</returns>
 		public OverlapResult Run()
 		{
 			switch (_type)
