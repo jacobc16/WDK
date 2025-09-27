@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="False">
+    <Style src="project://database/Assets/WDK/DebugMenu/UI/DebugUIStyles.uss?fileID=7433441132597879392&amp;guid=4dd5198ddb48d8e4385ec664dee7e9d5&amp;type=3#DebugUIStyles"/>
+    <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1;">
+        <ui:VisualElement name="Debug" style="position: absolute; right: 10px; top: 10px;">
+            <ui:Label text="Label" name="ObjectName"/>
+            <ui:ScrollView/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

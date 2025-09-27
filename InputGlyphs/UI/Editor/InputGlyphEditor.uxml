@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="True">
+    <ui:Label text="Glyphs"
+              style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; font-size: 18px; background-color: rgb(28, 167, 190); padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px;"/>
+    <ui:ListView binding-path="glyphEntries" virtualization-method="DynamicHeight"
+                 item-template="project://database/Assets/WDK/InputGlyphs/UI/Editor/InputGlyphItem.uxml?fileID=9197481963319205126&amp;guid=d340b2206d159ee4ba2a83e949d2a6e4&amp;type=3#InputGlyphItem"
+                 show-bound-collection-size="false" show-add-remove-footer="true" reorderable="true"/>
+</ui:UXML>

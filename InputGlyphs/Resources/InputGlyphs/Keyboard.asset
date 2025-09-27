@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6a5be5c87a4921b4c520bde5f4d523, type: 3}
+  m_Name: Keyboard
+  m_EditorClassIdentifier: 
+  glyphEntries:
+  - name: a
+    texture: {fileID: 2800000, guid: 14394ac005af84f43b3941b66a1b7e59, type: 3}
+  - name: b
+    texture: {fileID: 2800000, guid: ca81f1bb9946bad4bb8dd5e7b1c1fdbe, type: 3}
+  - name: c
+    texture: {fileID: 2800000, guid: 0dd46b8eba2928c4cac54e4fab8fd5df, type: 3}
+  - name: d
+    texture: {fileID: 2800000, guid: a2516fcd9eefd804facae43f6bca9776, type: 3}
+  - name: e
+    texture: {fileID: 2800000, guid: b631935901be5ac48b808f8a307b0a2b, type: 3}
+  - name: f
+    texture: {fileID: 2800000, guid: 3068c87a80d78f5459f84bcf25e54671, type: 3}
+  - name: g
+    texture: {fileID: 2800000, guid: a1388691c16d2db4e8b21fa203bd19b9, type: 3}
+  - name: h
+    texture: {fileID: 2800000, guid: d2e781cf96f2367439bc7a6d69c6c079, type: 3}
+  - name: i
+    texture: {fileID: 2800000, guid: 49ec1f2312e2380408959c1e3de58105, type: 3}
+  - name: j
+    texture: {fileID: 2800000, guid: e0068538ca91804438d5d853368e4d42, type: 3}
+  - name: k
+    texture: {fileID: 2800000, guid: 5c1cd7e42f106fb4d8e9647cac09c391, type: 3}
+  - name: l
+    texture: {fileID: 2800000, guid: 4c19e131c08c0a64799d1442c6d2b25b, type: 3}
+  - name: m
+    texture: {fileID: 2800000, guid: 8013f8f6a53ab424190bedb185a9ee19, type: 3}
+  - name: n
+    texture: {fileID: 2800000, guid: b62b35b4ced10254198303cb3e9bd31a, type: 3}
+  - name: o
+    texture: {fileID: 2800000, guid: 33004cc6632e94245b0260fac5b1c85b, type: 3}
+  - name: p
+    texture: {fileID: 2800000, guid: 1cf6a86a2f7d01342acd8d4755142fae, type: 3}
+  - name: q
+    texture: {fileID: 2800000, guid: f8e4a0ce781245c48b0ec80776134966, type: 3}
+  - name: r
+    texture: {fileID: 2800000, guid: 5e7100c64eced6d45b34672fef302a29, type: 3}
+  - name: s
+    texture: {fileID: 2800000, guid: ac7f0dbaff4693545868bec0ca9dcfc3, type: 3}
+  - name: t
+    texture: {fileID: 2800000, guid: a26f15de6d140f448a01919fe1c97c50, type: 3}
+  - name: u
+    texture: {fileID: 2800000, guid: e560ebcaccdf91747a10cef9bd8c37a2, type: 3}
+  - name: v
+    texture: {fileID: 2800000, guid: 904a203217dd35a4a8dd89acf4727f9d, type: 3}
+  - name: w
+    texture: {fileID: 2800000, guid: 248568284468fe04a96a23e96636edd2, type: 3}
+  - name: x
+    texture: {fileID: 2800000, guid: 886a78fe8a8d0774bad0bcd08e817874, type: 3}
+  - name: y
+    texture: {fileID: 2800000, guid: 954dbbf9e42198740a8a2190385958d0, type: 3}
+  - name: z
+    texture: {fileID: 2800000, guid: 2896825e2f94dd549b88d2cec70f38b8, type: 3}
+  - name: 1
+    texture: {fileID: 2800000, guid: b0ce13821da8a844981c50b9e746d9b9, type: 3}
+  - name: 2
+    texture: {fileID: 2800000, guid: e61b3e74e794c9c408efd3ec564ec488, type: 3}
+  - name: 3
+    texture: {fileID: 2800000, guid: 32e149487418f704eae6e5a6f06ebdef, type: 3}
+  - name: 4
+    texture: {fileID: 2800000, guid: b353d1ab5ae95364196f51451223ce2b, type: 3}
+  - name: 5
+    texture: {fileID: 2800000, guid: 0a837201eb93dcd44bf7c52440f1bbc3, type: 3}
+  - name: 6
+    texture: {fileID: 2800000, guid: 1b32d28b022711a4a851fdbfe66870a2, type: 3}
+  - name: 7
+    texture: {fileID: 2800000, guid: 7205f355d00a32249836fa775c960dcc, type: 3}
+  - name: 8
+    texture: {fileID: 2800000, guid: f6e6f7cabcd55a24b9b703bd12e52883, type: 3}
+  - name: 9
+    texture: {fileID: 2800000, guid: 3c56df4fca1a124479a54627e2b8e8f6, type: 3}
+  - name: 0
+    texture: {fileID: 2800000, guid: 8a55f5e4c4a38704b9529c914b2559d4, type: 3}
+  - name: escape
+    texture: {fileID: 2800000, guid: ac77589049455a2429fa31633e1b4d52, type: 3}
+  - name: space
+    texture: {fileID: 2800000, guid: 79d360b0f8d7167458c23f1ce9554591, type: 3}
+  - name: enter
+    texture: {fileID: 2800000, guid: d0f4db4f50a46ff4c9bab49e25358aab, type: 3}
+  - name: tab
+    texture: {fileID: 2800000, guid: fb962c1afeea690479e25975d746f302, type: 3}
+  - name: backquote
+    texture: {fileID: 2800000, guid: 3d6c25d6812f6af49aea4394b64de199, type: 3}
+  - name: baackslash
+    texture: {fileID: 2800000, guid: b2ff14664f9398a42a5dafb11bc9e197, type: 3}
+  - name: backspace
+    texture: {fileID: 2800000, guid: a9db0e961a92d1d439d7aecb767475d3, type: 3}
+  - name: capsLock
+    texture: {fileID: 2800000, guid: 7aa5412bafe1e584c8732e811f17e4e6, type: 3}
+  - name: comma
+    texture: {fileID: 2800000, guid: 99144f6e11c53484e935dcbd2fedee9f, type: 3}
+  - name: delete
+    texture: {fileID: 2800000, guid: 57a1c868ba89a2a479c16abc0a15f966, type: 3}
+  - name: downArrow
+    texture: {fileID: 2800000, guid: 80840db236423dd4db5acc1abe063984, type: 3}
+  - name: end
+    texture: {fileID: 2800000, guid: 2a4b47f2ac239034f805490ed34696c6, type: 3}
+  - name: equals
+    texture: {fileID: 2800000, guid: 8fffb3940fef04246b50fd64e6237b92, type: 3}
+  - name: f1
+    texture: {fileID: 2800000, guid: 249bcf39341c0bf429008f688ff036ad, type: 3}
+  - name: f2
+    texture: {fileID: 2800000, guid: 156813d09cb952c429afbed5cea3ae92, type: 3}
+  - name: f3
+    texture: {fileID: 2800000, guid: 90523b37b2e8a874bba5d5a9a25eb357, type: 3}
+  - name: f4
+    texture: {fileID: 2800000, guid: 495aa3368ff7a774d8c2d97e4015ba0d, type: 3}
+  - name: f5
+    texture: {fileID: 2800000, guid: af628c0c1f7d801499ff9a125da7249e, type: 3}
+  - name: f6
+    texture: {fileID: 2800000, guid: c310c304cfec54542b6b5daf1368b018, type: 3}
+  - name: f7
+    texture: {fileID: 2800000, guid: 3297137995768cd40bb127472640d4b1, type: 3}
+  - name: f8
+    texture: {fileID: 2800000, guid: 80a89ecd4bb4ced4daee956e29e522db, type: 3}
+  - name: f9
+    texture: {fileID: 2800000, guid: 490e90c101cbb62459bf078501b5e9a9, type: 3}
+  - name: f10
+    texture: {fileID: 2800000, guid: 491ca90db6253c84fb5e22f41d9ce39e, type: 3}
+  - name: f11
+    texture: {fileID: 2800000, guid: 05f74f652c2ac814f918f857c4e223d6, type: 3}
+  - name: f12
+    texture: {fileID: 2800000, guid: 87c732913a0e7d948abf8f8345c88058, type: 3}
+  - name: home
+    texture: {fileID: 2800000, guid: 7c5d1e6c6687f5d40b9f32a1a0a9bc68, type: 3}
+  - name: insert
+    texture: {fileID: 2800000, guid: 70ddc5b329b823647a4657ff13239dc0, type: 3}
+  - name: alt
+    texture: {fileID: 2800000, guid: 7770515a0cbbd2149a3c7cd6a823ec0a, type: 3}
+  - name: leftArrow
+    texture: {fileID: 2800000, guid: f514c03fbab7e11479f472695ffc75fc, type: 3}
+  - name: leftBracket
+    texture: {fileID: 2800000, guid: 6402b311c6ae5fc43a96318f424d968f, type: 3}
+  - name: ctrl
+    texture: {fileID: 2800000, guid: 8cca2b4c0d0a63940afa2051dd2d7102, type: 3}
+  - name: shift
+    texture: {fileID: 2800000, guid: 6176dc476fdc6f74fbb899dfd368c68d, type: 3}
+  - name: minus
+    texture: {fileID: 2800000, guid: 4dd87fb44291dc2409398a745f9c2b5e, type: 3}
+  - name: numLock
+    texture: {fileID: 2800000, guid: b1af6916bca0ba642b3283e81dc58f97, type: 3}
+  - name: numpad0
+    texture: {fileID: 2800000, guid: 8a55f5e4c4a38704b9529c914b2559d4, type: 3}
+  - name: numpad1
+    texture: {fileID: 2800000, guid: b0ce13821da8a844981c50b9e746d9b9, type: 3}
+  - name: numpad2
+    texture: {fileID: 2800000, guid: e61b3e74e794c9c408efd3ec564ec488, type: 3}
+  - name: numpad3
+    texture: {fileID: 2800000, guid: 32e149487418f704eae6e5a6f06ebdef, type: 3}
+  - name: numpad4
+    texture: {fileID: 2800000, guid: b353d1ab5ae95364196f51451223ce2b, type: 3}
+  - name: numpad5
+    texture: {fileID: 2800000, guid: 0a837201eb93dcd44bf7c52440f1bbc3, type: 3}
+  - name: numpad6
+    texture: {fileID: 2800000, guid: 1b32d28b022711a4a851fdbfe66870a2, type: 3}
+  - name: numpad7
+    texture: {fileID: 2800000, guid: 7205f355d00a32249836fa775c960dcc, type: 3}
+  - name: numpad8
+    texture: {fileID: 2800000, guid: f6e6f7cabcd55a24b9b703bd12e52883, type: 3}
+  - name: numpad9
+    texture: {fileID: 2800000, guid: 3c56df4fca1a124479a54627e2b8e8f6, type: 3}
+  - name: numpadDivide
+    texture: {fileID: 2800000, guid: 67a69655816281c4190d847bb6458f20, type: 3}
+  - name: numpadEnter
+    texture: {fileID: 2800000, guid: 62c8e30ed470261478a057f907d1a5c1, type: 3}
+  - name: numpadEquals
+    texture: {fileID: 2800000, guid: 8fffb3940fef04246b50fd64e6237b92, type: 3}
+  - name: numpadMultiply
+    texture: {fileID: 2800000, guid: 41ef2031122c0434b9bc8aea33fc3f4e, type: 3}
+  - name: numpadPeriod
+    texture: {fileID: 2800000, guid: aa4144ef29eee4347b2a241d33695481, type: 3}
+  - name: numpadPlus
+    texture: {fileID: 2800000, guid: e84987c8566ba91499a5be1dd174060e, type: 3}
+  - name: pageUp
+    texture: {fileID: 2800000, guid: eb27ca88437d51643bc566125aeab4ec, type: 3}
+  - name: pageDown
+    texture: {fileID: 2800000, guid: d983ceefcc5d9b943b71ff386ec1b7d4, type: 3}
+  - name: period
+    texture: {fileID: 2800000, guid: aa4144ef29eee4347b2a241d33695481, type: 3}
+  - name: printScreen
+    texture: {fileID: 2800000, guid: 76e5183fc21924b488a7b23790100358, type: 3}
+  - name: quote
+    texture: {fileID: 2800000, guid: 88fdbdfe2c3e25b45845469b4d878842, type: 3}
+  - name: rightBracket
+    texture: {fileID: 2800000, guid: 8048594d95c264f438077b4becd1c62c, type: 3}
+  - name: semicolon
+    texture: {fileID: 2800000, guid: af98361ad48458b46929445074d0d7c9, type: 3}
+  - name: slash
+    texture: {fileID: 2800000, guid: 67a69655816281c4190d847bb6458f20, type: 3}
+  - name: upArrow
+    texture: {fileID: 2800000, guid: db61e02f5358c5347bcbaac96484fda0, type: 3}

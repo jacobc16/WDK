@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement class="category" style="flex-grow: 1;">
+        <ui:Label text="Label" name="CategoryName" />
+        <ui:VisualElement class="spacer" style="flex-grow: 1;" />
+        <ui:VisualElement name="Content" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

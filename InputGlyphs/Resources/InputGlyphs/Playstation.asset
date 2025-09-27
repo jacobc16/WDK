@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6a5be5c87a4921b4c520bde5f4d523, type: 3}
+  m_Name: Playstation
+  m_EditorClassIdentifier: 
+  glyphEntries:
+  - name: buttonWest
+    texture: {fileID: 2800000, guid: 4c7455a04f5506743aeae24c580bb046, type: 3}
+  - name: buttonEast
+    texture: {fileID: 2800000, guid: 37bf91d22c05aac4eb3d58f2d8c5ba95, type: 3}
+  - name: buttonSouth
+    texture: {fileID: 2800000, guid: 584ff11c867ec644bb3401b913da5b8a, type: 3}
+  - name: buttonNorth
+    texture: {fileID: 2800000, guid: 44c236e142c937745956ebc0a147636b, type: 3}
+  - name: dpad
+    texture: {fileID: 2800000, guid: 13e18cc1fb60ef243a287fb3609ce058, type: 3}
+  - name: rightStickPress
+    texture: {fileID: 2800000, guid: 139d6cdf9a4db8f4facb68ddcc3a8133, type: 3}
+  - name: leftStickPress
+    texture: {fileID: 2800000, guid: 12b8d4658c77743428fd3a5c1adaa2f3, type: 3}
+  - name: leftShoulder
+    texture: {fileID: 2800000, guid: 09af0351687fe6649b74cd596c0eec95, type: 3}
+  - name: rightShoulder
+    texture: {fileID: 2800000, guid: 0a5765b5b34b52a4e924862af8f1a1eb, type: 3}
+  - name: leftTrigger
+    texture: {fileID: 2800000, guid: 66fbb50d3979a564aa60b6330064ca66, type: 3}
+  - name: rightTrigger
+    texture: {fileID: 2800000, guid: ce27453b301585c4ca96082bfb90ba3b, type: 3}
+  - name: startButton
+    texture: {fileID: 2800000, guid: eb92612d484c97f4b86f0f2b36d6b6d8, type: 3}
+  - name: selectButton
+    texture: {fileID: 2800000, guid: 90f54f3179b1f734b956dc3e8b995225, type: 3}
+  - name: leftStick
+    texture: {fileID: 2800000, guid: 12b8d4658c77743428fd3a5c1adaa2f3, type: 3}
+  - name: rightStick
+    texture: {fileID: 2800000, guid: 139d6cdf9a4db8f4facb68ddcc3a8133, type: 3}
+  - name: dpad/down
+    texture: {fileID: 2800000, guid: 21631d13fd7ed154b899d17cc89055c2, type: 3}
+  - name: dpad/left
+    texture: {fileID: 2800000, guid: 07a407511eaa3bd4181b906a9731eeed, type: 3}
+  - name: dpad/right
+    texture: {fileID: 2800000, guid: f29323aea4f4112488aba1b7cb8bb1e8, type: 3}
+  - name: dpad/up
+    texture: {fileID: 2800000, guid: 233ae92f8a8f75047b66d20b628dd216, type: 3}

@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/WDK/InputGlyphs/UI/Editor/InputGlyphEditor.uss?fileID=7433441132597879392&amp;guid=2f43e2ca84b84ccd8d7eb65ac382e62e&amp;type=3#InputGlyphEditor"/>
+    <ui:VisualElement
+            style="flex-grow: 0; flex-direction: row; background-color: rgb(72, 72, 72); padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; align-items: center;">
+        <ui:TextField label="Input" name="Input" placeholder-text="Key" binding-path="name"
+                      style="flex-grow: 1; margin-top: 0; margin-right: 8px; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255); flex-shrink: 1; -unity-text-align: middle-left;"/>
+        <uie:ObjectField label="Image" type="UnityEngine.Texture2D, UnityEngine.CoreModule" name="Glyph"
+                         binding-path="texture"
+                         style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255); flex-shrink: 1; -unity-text-align: middle-left;"/>
+    </ui:VisualElement>
+</ui:UXML>
