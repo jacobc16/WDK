@@ -5,6 +5,9 @@ namespace WDK.UI
 {
 	public delegate void OnDraggableMoved(Vector2 position);
 
+	/// <summary>
+	///     This class allows a VisualElement to be dragged around within its parent container.
+	/// </summary>
 	public class DraggableManipulator : PointerManipulator
 	{
 		private Vector2 maxBounds;
@@ -17,6 +20,9 @@ namespace WDK.UI
 
 		private bool enabled { get; set; }
 
+		/// <summary>
+		///     This event is triggered whenever the draggable element is moved.
+		/// </summary>
 		public event OnDraggableMoved OnDraggableMoved;
 
 		public static DraggableManipulator Create(VisualElement target)
