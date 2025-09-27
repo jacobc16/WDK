@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace WDK.Utility
 {
+	/// <summary>
+	///     This is a utility class that allows you to easily check if a certain duration of time has passed since its creation
+	///     or last reset.
+	/// </summary>
 	public class TimeUntil
 	{
 		public TimeUntil()
