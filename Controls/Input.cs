@@ -20,10 +20,6 @@ namespace WDK.Controls
 		/// </summary>
 		public static Vector2 MousePosition => Mouse.current.position.ReadValue();
 
-		/// <summary>
-		///     Horizontal and Vertical movement inputs
-		/// </summary>
-		// public static Vector2 Movement => Player?.Move.ReadValue<Vector2>() ?? Vector2.zero;
 		internal static event OnBindingRebinded BindingRebinded;
 	}
 }
