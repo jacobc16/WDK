@@ -4,15 +4,6 @@ namespace WDK.Helpers
 {
 	public static class Cursor
 	{
-		public enum CursorType
-		{
-			Arrow,
-			Pointer,
-			HandOpen,
-			HandClosed,
-			Sell
-		}
-
 		/// <summary>
 		///     Returns true if the cursor is currently locked (in the center of the screen and invisible).
 		/// </summary>
