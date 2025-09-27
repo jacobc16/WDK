@@ -28,8 +28,8 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Get the glyph for a specific action based on the current input device.
 		/// </summary>
-		/// <param name="action"></param>
-		/// <returns></returns>
+		/// <param name="action">The input action for which to get the glyph.</param>
+		/// <returns>>The texture representing the glyph for the specified action and current device type, or null if not found.</returns>
 		public static Texture2D GetGlyph(InputAction action)
 		{
 			var inputManager = InputManager.Instance;
@@ -48,9 +48,9 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Get the glyph for a specific action based on the specified input device.
 		/// </summary>
-		/// <param name="deviceType"></param>
-		/// <param name="action"></param>
-		/// <returns></returns>
+		/// <param name="deviceType">The type of input device (e.g., MouseAndKeyboard, Controller).</param>
+		/// <param name="action">The input action for which to get the glyph.</param>
+		/// <returns>>The texture representing the glyph for the specified action and device type, or null if not found.</returns>
 		public static Texture2D GetGlyph(InputManager.DeviceType deviceType, InputAction action)
 		{
 			var inputManager = InputManager.Instance;
