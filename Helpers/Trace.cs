@@ -33,14 +33,14 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Starts a trace from the camera to the mouse position
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Screen =>
 			Ray(MainCamera?.ScreenPointToRay(Input.MousePosition) ?? new Ray(Vector3.zero, Vector3.forward));
 
 		/// <summary>
 		///     Creates a trace from the camera's position forward.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Ray()
 		{
 			if (MainCamera is not null)
@@ -53,9 +53,9 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Creates a trace from a ray.
 		/// </summary>
-		/// <param name="ray"></param>
-		/// <param name="distance"></param>
-		/// <returns></returns>
+		/// <param name="ray">The ray to trace from.</param>
+		/// <param name="distance">The maximum distance of the trace. Default is infinity.</param>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Ray(Ray ray, float distance = float.MaxValue)
 		{
 			var traceObject = new TraceObject(ray, TraceType.Ray, distance);
@@ -65,10 +65,10 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Creates a trace from a ray defined by an origin and direction.
 		/// </summary>
-		/// <param name="origin"></param>
-		/// <param name="direction"></param>
-		/// <param name="distance"></param>
-		/// <returns></returns>
+		/// <param name="origin">The origin point of the ray.</param>
+		/// <param name="direction">The direction of the ray.</param>
+		/// <param name="distance">The maximum distance of the trace. Default is infinity.</param>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Ray(Vector3 origin, Vector3 direction, float distance = float.MaxValue)
 		{
 			direction.Normalize();
@@ -80,10 +80,10 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Creates a sphere trace from a ray.
 		/// </summary>
-		/// <param name="ray"></param>
-		/// <param name="radius"></param>
-		/// <param name="distance"></param>
-		/// <returns></returns>
+		/// <param name="ray">The ray to trace from.</param>
+		/// <param name="radius">The radius of the sphere.</param>
+		/// <param name="distance">The maximum distance of the trace. Default is infinity.</param>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Sphere(Ray ray, float radius, float distance = float.MaxValue)
 		{
 			var traceObject = new TraceObject(ray, TraceType.Sphere, distance);
@@ -94,11 +94,11 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Castes a sphere trace from a ray defined by an origin and direction.
 		/// </summary>
-		/// <param name="origin"></param>
-		/// <param name="direction"></param>
-		/// <param name="radius"></param>
-		/// <param name="distance"></param>
-		/// <returns></returns>
+		/// <param name="origin">The origin point of the ray.</param>
+		/// <param name="direction">The direction of the ray.</param>
+		/// <param name="radius">The radius of the sphere.</param>
+		/// <param name="distance">The maximum distance of the trace. Default is infinity.</param>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Sphere(Vector3 origin, Vector3 direction, float radius, float distance = float.MaxValue)
 		{
 			direction.Normalize();
@@ -110,10 +110,10 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Castes a box trace from a ray.
 		/// </summary>
-		/// <param name="ray"></param>
-		/// <param name="size"></param>
-		/// <param name="distance"></param>
-		/// <returns></returns>
+		/// <param name="ray">The ray to trace from.</param>
+		/// <param name="size">The size of the box (length of one side).</param>
+		/// <param name="distance">The maximum distance of the trace. Default is infinity.</param>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Box(Ray ray, float size, float distance = float.MaxValue)
 		{
 			var traceObject = new TraceObject(ray, TraceType.Box, distance);
@@ -124,11 +124,11 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Castes a box trace from a ray defined by an origin and direction.
 		/// </summary>
-		/// <param name="origin"></param>
-		/// <param name="direction"></param>
-		/// <param name="size"></param>
-		/// <param name="distance"></param>
-		/// <returns></returns>
+		/// <param name="origin">The origin point of the ray.</param>
+		/// <param name="direction">The direction of the ray.</param>
+		/// <param name="size">The size of the box (length of one side).</param>
+		/// <param name="distance">The maximum distance of the trace. Default is infinity.</param>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Box(Vector3 origin, Vector3 direction, float size, float distance = float.MaxValue)
 		{
 			direction.Normalize();
@@ -140,10 +140,10 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Castes a capsule trace from a ray.
 		/// </summary>
-		/// <param name="ray"></param>
-		/// <param name="radius"></param>
-		/// <param name="distance"></param>
-		/// <returns></returns>
+		/// <param name="ray">The ray to trace from.</param>
+		/// <param name="radius">The radius of the capsule.</param>
+		/// <param name="distance">The maximum distance of the trace. Default is infinity.</param>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Capsule(Ray ray, float radius, float distance = float.MaxValue)
 		{
 			var traceObject = new TraceObject(ray, TraceType.Capsule, distance);
@@ -154,11 +154,11 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Castes a capsule trace from a ray defined by an origin and direction.
 		/// </summary>
-		/// <param name="origin"></param>
-		/// <param name="direction"></param>
-		/// <param name="radius"></param>
-		/// <param name="distance"></param>
-		/// <returns></returns>
+		/// <param name="origin">The origin point of the ray.</param>
+		/// <param name="direction">The direction of the ray.</param>
+		/// <param name="radius">The radius of the capsule.</param>
+		/// <param name="distance">The maximum distance of the trace. Default is infinity.</param>
+		/// <returns>A TraceObject to configure and run the trace.</returns>
 		public static TraceObject Capsule(Vector3 origin, Vector3 direction, float radius, float distance = float.MaxValue)
 		{
 			direction.Normalize();
@@ -196,8 +196,8 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Ignores a specific GameObject in the trace.
 		/// </summary>
-		/// <param name="gameObject"></param>
-		/// <returns></returns>
+		/// <param name="gameObject">The GameObject to ignore.</param>
+		/// <returns>The current TraceObject for method chaining.</returns>
 		public TraceObject IgnoreGameObject(GameObject gameObject)
 		{
 			IgnoredObjects.Add(gameObject);
@@ -207,8 +207,8 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Only traces objects that are on the specified layer mask.
 		/// </summary>
-		/// <param name="mask"></param>
-		/// <returns></returns>
+		/// <param name="mask">The layer mask to use for the trace.</param>
+		/// <returns>The current TraceObject for method chaining.</returns>
 		public TraceObject WithLayerMask(LayerMask mask)
 		{
 			_mask |= mask;
@@ -218,8 +218,8 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Sets the size of the trace (for sphere, box, and capsule types).
 		/// </summary>
-		/// <param name="size"></param>
-		/// <returns></returns>
+		/// <param name="size">The size to set.</param>
+		/// <returns>The current TraceObject for method chaining.</returns>
 		public TraceObject Size(float size)
 		{
 			_size = size;
@@ -234,7 +234,7 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Runs the trace and returns a single result.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>A TraceResult containing the result of the trace.</returns>
 		public TraceResult Run()
 		{
 			if (_hasNoInput)
@@ -369,8 +369,8 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Gets the first component of the hit GameObject.
 		/// </summary>
-		/// <typeparam name="T"></typeparam>
-		/// <returns></returns>
+		/// <typeparam name="T">The type of component to get.</typeparam>
+		/// <returns>The component if found; otherwise, null.</returns>
 		public T GetComponent<T>() where T : Component
 		{
 			return GameObject.GetComponent<T>();
@@ -379,8 +379,8 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Gets the first component of the hit GameObject in its parent hierarchy.
 		/// </summary>
-		/// <typeparam name="T"></typeparam>
-		/// <returns></returns>
+		/// <typeparam name="T">The type of component to get.</typeparam>
+		/// <returns>The component if found; otherwise, null.</returns>
 		public T GetComponentInParent<T>() where T : Component
 		{
 			return GameObject.GetComponentInParent<T>();
@@ -389,8 +389,8 @@ namespace WDK.Helpers
 		/// <summary>
 		///     Gets the first component of the hit GameObject in its children.
 		/// </summary>
-		/// <typeparam name="T"></typeparam>
-		/// <returns></returns>
+		/// <typeparam name="T">The type of component to get.</typeparam>
+		/// <returns>The component if found; otherwise, null.</returns>
 		public T GetComponentInChildren<T>(bool includeInactive = false) where T : Component
 		{
 			return GameObject.GetComponentInChildren<T>(includeInactive);
