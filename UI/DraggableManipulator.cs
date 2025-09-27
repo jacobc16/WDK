@@ -3,6 +3,8 @@ using UnityEngine.UIElements;
 
 namespace WDK.UI
 {
+	public delegate void OnDraggableMoved(Vector2 position);
+
 	public class DraggableManipulator : PointerManipulator
 	{
 		private Vector2 maxBounds;
@@ -14,6 +16,8 @@ namespace WDK.UI
 		}
 
 		private bool enabled { get; set; }
+
+		public event OnDraggableMoved OnDraggableMoved;
 
 		public static DraggableManipulator Create(VisualElement target)
 		{
@@ -79,6 +83,9 @@ namespace WDK.UI
 				target.panel.visualTree.worldBound.height - maxBounds.y);
 
 			target.style.translate = newPosition;
+
+			if (currentPos != newPosition)
+				OnDraggableMoved?.Invoke(newPosition);
 		}
 
 		private void PointerCaptureOutHandler(PointerCaptureOutEvent evt)
