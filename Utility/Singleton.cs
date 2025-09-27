@@ -5,7 +5,7 @@ namespace WDK.Utility
 	/// <summary>
 	///     This is a simple singleton pattern implementation for MonoBehaviour classes.
 	/// </summary>
-	/// <typeparam name="T"></typeparam>
+	/// <typeparam name="T">The type of the singleton class.</typeparam>
 	public class Singleton<T> : MonoBehaviour
 	{
 		/// <summary>
